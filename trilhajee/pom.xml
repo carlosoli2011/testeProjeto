@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<!-- teste <parent> <groupId>br.com.logic.projeto</groupId> <artifactId>projetotrilha</artifactId> 
+		<version>0.0.1-SNAPSHOT</version> </parent> -->
+	<groupId>br.com.trilhajee</groupId>
+	<artifactId>trilhajee</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>trilhajee</name>
+	<packaging>war</packaging>
+	<dependencies>
+		<dependency>
+			<groupId>org.jboss.ejb3</groupId>
+			<artifactId>jboss-ejb3-ext-api</artifactId>
+			<version>2.2.0.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.atteo.moonshine</groupId>
+			<artifactId>jax-rs</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hsqldb</groupId>
+			<artifactId>hsqldb</artifactId>
+			<version>2.3.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+	<build>
+	<plugins>
+	<plugin>
+    <artifactId>maven-war-plugin</artifactId>
+    <version>2.4</version>
+    <configuration>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
+    </configuration>
+</plugin>
+	</plugins>
+	</build>
+</project>
